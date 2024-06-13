@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class playsound1 : MonoBehaviour
 {
+    public Animator myAnimator;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +15,10 @@ public class playsound1 : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void OldCupGrabbed()
+    {
+        myAnimator.SetBool("startAnimation", true);
     }
 }
